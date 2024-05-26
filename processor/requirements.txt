@@ -1,4 +1,4 @@
 confluent_kafka==2.2.0
-cryptography==41.0.1
+cryptography==42.0.4
 psycopg2-binary==2.9.9
-Requests==2.31.0
+Requests==2.32.2
