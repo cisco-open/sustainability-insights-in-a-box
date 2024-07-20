@@ -21,7 +21,7 @@ RUN pip install --no-warn-script-location -r requirements.txt
 
 # Copy sources and libraries
 COPY --chown=susit ./processor /susit/processor
-COPY --chown=susit ../utils /susit/processor/utils
+COPY --chown=susit ./utils /susit/processor/utils
 
 # Run as non-root user
 CMD [ "python", "processor.py" ]

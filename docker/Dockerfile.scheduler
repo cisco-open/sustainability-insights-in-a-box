@@ -21,7 +21,7 @@ RUN pip install --no-warn-script-location -r requirements.txt
 
 # Copy sources and libraries
 COPY --chown=susit ./scheduler /susit/scheduler
-COPY --chown=susit ../utils /susit/scheduler/utils
+COPY --chown=susit ./utils /susit/scheduler/utils
 
 # Run as non-root user
 CMD [ "python", "scheduler.py" ]
