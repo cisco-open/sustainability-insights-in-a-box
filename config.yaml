@@ -40,6 +40,7 @@ devices:
     connection: ssh
     address: 10.10.0.1
     port: 22
+    ssh_options: -o KexAlgorithms=+diffie-hellman-group14-sha1 -o HostKeyAlgorithms=+ssh-rsa
     username: admin
     password: password-encrypted-on-first-run
     timeout: 30
@@ -54,6 +55,7 @@ devices:
     connection: ssh
     address: 10.20.0.1
     port: 22
+    ssh_options: -o KexAlgorithms=+diffie-hellman-group14-sha1 -o HostKeyAlgorithms=+ssh-rsa
     username: admin
     password: another-password-encrypted-on-first-run
     timeout: 30

@@ -78,6 +78,7 @@ class SSH_Connection:
 
         try:
             self._connection.connect(log_stdout = False,
+                                     goto_enable = False,
                                      init_exec_commands=['terminal length 0'],
                                      init_config_commands=[],
                                      connection_timeout=self._device_config['timeout'])
