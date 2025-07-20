@@ -21,6 +21,7 @@ Devices and collections are configured with a YAML file. This is mounted on Sche
   - connection: Connection type only 'ssh' supported in this version
   - address: Device IP address or hostname
   - port: Device SSH port to connect
+  - ssh_options: SSH command line options used when connecting via ssh. Optional. Default value '-o KexAlgorithms=+diffie-hellman-group14-sha1 -o HostKeyAlgorithms=+ssh-rsa'
   - username: Device username
   - password: Device password in plain text, will be encyrpted on first run
   - timeout: Connection timeout in seconds
@@ -53,6 +54,7 @@ devices:
     connection: ssh
     address: 10.10.0.1
     port: 22
+    ssh_options: -o KexAlgorithms=+diffie-hellman-group14-sha1 -o HostKeyAlgorithms=+ssh-rsa
     username: admin
     password: password-encrypted-on-first-run
     timeout: 30
@@ -67,6 +69,7 @@ devices:
     connection: ssh
     address: 10.20.0.1
     port: 22
+    ssh_options: -o KexAlgorithms=+diffie-hellman-group14-sha1 -o HostKeyAlgorithms=+ssh-rsa
     username: admin
     password: another-password-encrypted-on-first-run
     timeout: 30

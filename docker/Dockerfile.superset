@@ -1,4 +1,4 @@
-FROM apache/superset:latest
+FROM apache/superset:4.0.1
 
 USER root
 RUN pip install mysqlclient

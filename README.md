@@ -21,7 +21,7 @@ If using podman, update the build and running scipts to use `podman`, `podman-co
   2. `superset/superset-init.sh`
 - Recommended to change application credentials in `.env` file i.e. `POSTGRES_PASSWORD`, `ADMIN_PASSWORD`, `SUPERSET_ADMIN_PASSWORD` and `SUPERSET_SECRET_KEY`
 - Start applciations `$ start-susi.sh` or simply `$ docker compose up -d`. Building the docker images is already integreated into the Docker Compose process.
-- Open [Application Dashboard](https://locahost:8088) in a browser
+- Open [Application Dashboard](http://locahost:8088) in a browser
 - Login with username `admin` and value of `SUPERSET_ADMIN_PASSWORD` as password set in `.env`. Default values are `admin/5cS9Fb73CUnd`
 - Select top level, site level or device level dashboard for visualisation and insights
 - To stop applciations `$ stop-susi.sh` or simply `$ docker compose down`
